@@ -69,7 +69,9 @@ h1{
     grid-gap: 5px;
     margin: 20px;
   }
-
+.container a, .flip-card-back h2{
+    text-decoration: none;
+}
 .flip-card {
     background-color: transparent;
     perspective: 1000px; /* 3D effect */
