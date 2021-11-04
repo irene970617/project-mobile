@@ -1,0 +1,176 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Alegreya Sans SC', serif;
+  }
+
+header{
+    background: rgb(245, 187, 148);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+  }
+.nav_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.nav_links a{
+    padding: 15px;
+    color:rgb(49, 38, 6);
+    text-decoration: none;
+    font-size:1.2em;
+  }
+
+.nav_links a:visited{
+    color: rgb(49, 38, 6);
+}
+.sightseeing{
+    text-decoration: underline;
+}
+p.title{
+    font-size: 2.5em;
+    color: black;
+    font-family: 'Permanent Marker', cursive;
+ }
+
+a.skip{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  }
+  
+a.skip:focus{
+    top:20px;
+    color: black;
+    text-decoration-style: solid;
+  }
+
+#intro{
+    margin:20px;
+}
+.container{
+    /* Requirement 5 code here*/
+  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+    grid-template-rows: 0.5fr 0.1fr 0.5fr;
+  
+  }
+
+#introduction{
+    background-attachment: fixed; /* Parallax effect */
+    background-position:top; /* Parallax effect */
+    background-size:contain; /* Parallax effect */
+    height: 300px; /* Parallax effect */
+    grid-row:1;
+    background-image: url("../img/balloon.jpg");
+    background-repeat: no-repeat;
+    opacity: .8;
+  }
+
+.titles{
+    margin-top: 5px;
+}
+.titles h1{
+    font-weight: 800;
+    font-size: 2em;
+    z-index: 1;
+    color:black;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+
+}
+.titles p{
+    text-align: center;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width:300px;
+    margin: 30px auto;
+    font-family: 'Acme', sans-serif;
+}
+.card img{
+    height: 350px;
+    width: 300px;
+    object-fit:cover;
+}
+.container-card {
+    padding: 2px 16px;
+  }
+h2{
+    text-align: center;
+    font-weight: 800;
+    font-size: 2em;
+}
+.star{
+    text-align: center;
+}
+.card-item{
+    padding:5px;
+}
+
+footer{
+    background-color:rgb(245, 187, 148);
+    color:black;
+    padding: 30px;
+  }
+
+.contact{
+    text-align: center;
+}
+.icon{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+}
+.icon a{
+    width:2em;
+    height:2em;
+    margin: 10px;    
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+    /*Turn off scroll*/
+    html{
+        scroll-behavior: auto; /* Removes scroll animation */
+    }
+  
+    /*Turn off transition*/
+    .skip a{
+      -webkit-transition: initial; /* sets to default setting */
+      transition: initial; /* sets to default setting */
+    }
+  
+    /*Turn off parallax*/
+    #introduction{
+      background-attachment: initial;
+    }
+    #logo{
+        animation: none;
+      }
+  
+  }
+
+  #logo{
+    animation-name: logo;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+ }
+
+
+ @keyframes logo{
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  } 
