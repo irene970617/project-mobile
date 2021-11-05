@@ -116,6 +116,22 @@ footer{
     margin: 10px;    
 }
 
+#logo{
+    animation-name: logo;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+ }
+
+
+ @keyframes logo{
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  } 
+
 @media screen and (prefers-reduced-motion: reduce){
     /*Turn off scroll*/
     html{
@@ -134,18 +150,3 @@ footer{
   
   }
 
-  #logo{
-    animation-name: logo;
-    animation-duration: 5s;
-    animation-iteration-count: 1;
- }
-
-
- @keyframes logo{
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  } 

@@ -55,15 +55,6 @@ a.skip:focus{
 #intro{
     margin:20px;
 }
-.container{
-    /* Requirement 5 code here*/
-  
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row-gap: 10px;
-    grid-template-rows: 0.5fr 0.1fr 0.5fr;
-  
-  }
 
 #introduction{
     background-attachment: fixed; /* Parallax effect */
@@ -136,7 +127,19 @@ footer{
     height:2em;
     margin: 10px;    
 }
-
+#logo{
+    animation-name: logo;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+ }
+@keyframes logo{
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  } 
 @media screen and (prefers-reduced-motion: reduce){
     /*Turn off scroll*/
     html{
@@ -159,18 +162,6 @@ footer{
   
   }
 
-  #logo{
-    animation-name: logo;
-    animation-duration: 5s;
-    animation-iteration-count: 1;
- }
 
 
- @keyframes logo{
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  } 
+

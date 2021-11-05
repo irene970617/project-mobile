@@ -216,6 +216,21 @@ footer{
 }
 
 
+#logo{
+    animation-name: logo;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+ }
+
+
+ @keyframes logo{
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  } 
 
 
 @media screen and (prefers-reduced-motion: reduce){
@@ -235,19 +250,3 @@ footer{
       }
   
   }
-
-  #logo{
-    animation-name: logo;
-    animation-duration: 5s;
-    animation-iteration-count: 1;
- }
-
-
- @keyframes logo{
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  } 
