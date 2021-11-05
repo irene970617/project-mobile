@@ -133,15 +133,14 @@ footer{
   } 
 
 @media screen and (prefers-reduced-motion: reduce){
-    /*Turn off scroll*/
     html{
-        scroll-behavior: auto; /* Removes scroll animation */
+        scroll-behavior: auto; 
     }
   
-    /*Turn off transition*/
+    
     .skip a{
-      -webkit-transition: initial; /* sets to default setting */
-      transition: initial; /* sets to default setting */
+      -webkit-transition: initial; 
+      transition: initial; 
     }
   
     #logo{
